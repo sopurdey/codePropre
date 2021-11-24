@@ -1,18 +1,28 @@
 package ex3;
 
-public  class Animal {
+/**
+ * Classe concept animal
+ * 
+ * @author FormationDiginamic
+ *
+ */
+public class Animal {
+
+	/** Nom d'animal (Gazelle, Zèbre...) */
 	private String nom;
+	
+	/** Type d'animal (Mamifère, Carnivore, Poisson...) */
 	private String type;
+	
+	/** Type de comportement alimentaire (Carnivore, Herbivore, Omnivore) */
 	private String comportementAlimentaire;
 
-	public Animal(String nom, String type, String comportementAlimentaire, String enclos) {
-		this.nom = nom;
-		this.type = type;
-		this.comportementAlimentaire = comportementAlimentaire;
-	}
-
+	/** Constructeur 
+	 * @param nom 						nom de l'animal
+	 * @param type						type d'animal
+	 * @param comportementAlimentaire	comportement alimentaire
+	 */
 	public Animal(String nom, String type, String comportementAlimentaire) {
-		super();
 		this.nom = nom;
 		this.type = type;
 		this.comportementAlimentaire = comportementAlimentaire;
@@ -20,7 +30,7 @@ public  class Animal {
 
 	@Override
 	public String toString() {
-		return "Animal [nom=" + nom + ", type=" + type + ", comportementAlimentaire=" + comportementAlimentaire + "]";
+		return "nom=" + nom + ", type=" + type + ", comportementAlimentaire=" + comportementAlimentaire;
 	}
 
 	public String getNom() {
@@ -47,5 +57,4 @@ public  class Animal {
 		this.comportementAlimentaire = comportementAlimentaire;
 	}
 
-	
 }
